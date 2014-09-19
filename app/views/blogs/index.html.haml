@@ -1,0 +1,14 @@
+%div{ ng_controller: 'BlogsCtrl' }
+	%table.table.table-striped
+		%thead
+			%tr
+				%th Id
+				%th Title
+				%th Description
+				%th Rating
+		%tbody
+			%tr{ ng_repeat: "blog in blogs"}
+				%td {{blog.id}}
+				%td {{blog.title}}
+				%td {{blog.description}}
+				%td {{blog.rating}}
